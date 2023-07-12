@@ -63,3 +63,11 @@ lazy val `read-file` = project
       "com.lihaoyi" %% "ujson" % "3.0.0"
     )
   )
+
+lazy val `hello-world` = project
+  .settings(sharedSettings)
+  .settings(
+    libraryDependencies ++= Seq(
+      "dev.zio" %% "zio-http" % "3.0.0-RC2"
+    )
+  )
